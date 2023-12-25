@@ -1,4 +1,4 @@
-apiVersion: argiproj.io/v1alpha1
+apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: chat
@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: deployment
-    rpotUrl: "https://github.com/eftech93/post-kubernete-chat.git"
+    repoURL: "https://github.com/eftech93/post-kubernete-chat.git"
     targetRevision: main
   syncPolicy:
     syncOptions:
